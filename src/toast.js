@@ -51,7 +51,7 @@ System.register(['angular2/core', './toast-container.component', './toast-option
                     var _this = this;
                     if (!this.container) {
                         // a hack to get app element in shadow dom
-                        var appElement = this.appRef._rootComponents[0].location;
+                        var appElement = this.appRef['_rootComponents'][0].location;
                         var bindings = core_1.Injector.resolve([core_1.provide(toast_options_1.ToastOptions, { useValue: this.options })]);
                         this.loader.loadNextToLocation(toast_container_component_1.ToastContainer, appElement, bindings)
                             .then(function (ref) {

@@ -4,7 +4,10 @@
   "description": "bootstrap style of toast for angular 2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --out bundle.js src/*.ts",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
   },
   "repository": {
     "type": "git",

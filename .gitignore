@@ -33,3 +33,7 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# Remove tsc generated js and map file
+.js
+.map.js

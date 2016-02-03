@@ -32,7 +32,7 @@ export class ToastsManager {
   show(toast: Toast) {
     if (!this.container) {
       // a hack to get app element in shadow dom
-      let appElement: ElementRef = this.appRef._rootComponents[0].location;
+      let appElement: ElementRef = this.appRef['_rootComponents'][0].location;
 
       let bindings = Injector.resolve([provide(ToastOptions, {useValue: <ToastOptions>this.options})]);
 
