@@ -1,0 +1,7 @@
+.idea
+gulp-tasks
+logs
+
+README.md
+npm-debug.log*
+*.png

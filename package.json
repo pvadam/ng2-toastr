@@ -1,12 +1,13 @@
 {
   "name": "ng2-toastr",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "bootstrap style of toast for angular 2",
   "main": "index.js",
   "scripts": {
-    "prepublish": "gulp clean && ./node_modules/.bin/tsc",
+    "prepublish": "gulp clean && ./node_modules/.bin/tsc && node make.js",
     "build:prod": "NODE_ENV=production webpack -p --progress --color --optimize-minimize --optimize-dedupe --optimize-occurence-order",
     "build:dev": "webpack-dev-server --hot --inline --colors --display-error-details --display-cached",
+    "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
@@ -46,6 +47,9 @@
     "ts-loader": "~0.8",
     "css-loader": "~0.23",
     "style-loader": "~0.13",
+    "async": "1.5.2",
+    "del": "2.2.0",
+    "systemjs-builder": "0.15.6",
     "webpack": "~1.12.12",
     "webpack-dev-server": "~1.14.1"
   },
