@@ -35,5 +35,5 @@ node_modules
 .node_repl_history
 
 # Remove tsc generated js and map file
-.js
-.map.js
+*.js
+*.map
