@@ -18,8 +18,8 @@ export declare class ToastsManager {
     setupToast(toast: Toast): void;
     clearToast(toastId: number): void;
     dispose(): void;
-    error(message: any, title: any): void;
-    info(message: any, title: any): void;
-    success(message: any, title: any): void;
-    warning(message: any, title: any): void;
+    error(message: string, title?: string): void;
+    info(message: string, title?: string): void;
+    success(message: string, title?: string): void;
+    warning(message: string, title?: string): void;
 }

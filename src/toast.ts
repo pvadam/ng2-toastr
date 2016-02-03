@@ -75,22 +75,22 @@ export class ToastsManager {
     this.container = null;
   }
 
-  error(message, title) {
+  error(message: string, title?: string) {
     let toast = new Toast('error', message, title);
     this.show(toast);
   }
 
-  info(message, title) {
+  info(message: string, title?: string) {
     let toast = new Toast('info', message, title);
     this.show(toast);
   }
 
-  success(message, title) {
+  success(message: string, title?: string) {
     let toast = new Toast('success', message, title);
     this.show(toast);
   }
 
-  warning(message, title) {
+  warning(message: string, title?: string) {
     let toast = new Toast('warning', message, title);
     this.show(toast);
   }

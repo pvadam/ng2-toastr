@@ -16,7 +16,7 @@ The lib is inspired by [angular-toastr] (https://github.com/Foxandxss/angular-to
 2. Include js and css files in html header
     
     ```
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="node_modules/ng2-toastr/bundles/ng2-toastr.min.css" rel="stylesheet" />
     <script src="node_modules/ng2-toastr/bundles/ng2-toastr.min.js"></script>
     
     ```
